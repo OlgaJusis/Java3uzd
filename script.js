@@ -54,14 +54,15 @@ console.log(asmuoNR1.vardas);
 console.log(asmuoNR1.age);
 console.log(asmuoNR1.bmi);
 console.log(asmuoNR1.smokes);
- if (asmuoNR1.age < 30 && bmi < 25 && smokes === no) {
-    console.log(Jusu, rizika, maza. Nepamirškite, sportuoti, ir, sveikai, maitintis. bei, ir, toliau, nerukykite);
- } else if(asmuoNR1.age >= 30 && age <= 50 && bmi < 25 && bmi <30 && smokes === no) {
-}else if (asmuoNR1.age >= 50 || bmi >= 30 || smokes === yes) {
-    console.log(Jusu, rizika, didele. Sportuokite, ir, sveikai, maitinkites. Meskite, rukyti);
-     } else if(asmuoNR1.age >= 50 && bmi > 30 && bmi <30 && smokes === yes) {
-        console.log(Jusu, rizika, labai,didele. Sportuokite, ir, sveikai, maitinkites. Meskite, rukyti. Uzsiimkite, meditacija);
+ if (asmuoNR1.age < 30 && asmuoNR1.bmi < 25 && asmuoNR1.smokes === 'no') {
+    console.log('Jusu rizika maza. Nepamirškite sportuoti ir sveikai maitintis, bei ir toliau, nerukykite');
+ } else if(asmuoNR1.age >= 30 && asmuoNR1.age <= 50 && asmuoNR1.bmi < 25 && asmuoNR1.bmi <30 && asmuoNR1.smokes === 'no') {
+    console.log('Jusu rizika vidutine. Sportuokite ir sveikai maitinkites, bei ir toliau nerukykite');
+}else if (asmuoNR1.age >= 50 || asmuoNR1.bmi >= 30 || asmuoNR1.smokes === 'yes') {
+    console.log('Jusu rizika didele. Sportuokite ir sveikai maitinkites. Meskite rukyti');
+     } else if(asmuoNR1.age >= 50 && asmuoNR1.bmi > 30 && asmuoNR1.smokes === 'yes') {
+        console.log('Jusu rizika labai didele. Sportuokite ir sveikai maitinkites. Meskite rukyti. Uzsiimkite meditacija. Tai irgi padeda valdyti stresa ir pades mesti rukyti');
  } 
  else {
-    console.log(Jusu, rizika, neapibrezta. Tyrimas, reikalauja, daugiau, duomenu);
+    console.log('Jusu rizika neapibrezta. Tyrimas reikalauja daugiau duomenu');
  }
